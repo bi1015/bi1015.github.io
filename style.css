@@ -1,0 +1,295 @@
+html {
+    font-family: "Zen Old Mincho", serif;
+    font-weight: 200;
+    font-style: normal;
+    background-color: black;
+    color: white;
+    width: 100%;
+}      
+
+.container {
+    width: 90%;
+    margin-bottom: 100px;
+    align-items: left;
+    text-align: left;
+}
+
+.container .flex {
+    float: left;
+}
+
+a:hover {
+    color: red;
+    transition: .3S;
+}
+
+/*ヘッダー*/
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header {
+    height: 105px;
+    width: 100%;
+    padding: 27px 0;
+    top: 0;
+    z-index: 999;
+    background-color: rgba(40, 39, 39);
+    position: sticky;
+    z-index: 10;
+}
+
+.header_menu li {
+    margin: 0px 7px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 200;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+.logo span {
+    font-weight: 900;
+    color: red;
+}
+
+.sns a:hover {
+    color: red;
+    transition: .3S;
+}
+
+/*font-awesome*/
+.sns {
+    text-align: left;
+}
+
+.sns a {
+    font-size: 28px;
+    padding-right: 5px;
+}
+
+/*menu*/
+.header_menu li {
+    margin-left: 40px;
+}
+
+.header_menu li a {
+    transition: .3S;
+}
+
+/*メイン*/
+main {
+    align-items: center;
+    text-align: center;
+    width: 765px;
+    margin-left: 50px;
+}
+
+#hero .main_icon {
+    text-align: center;
+    position: relative;
+}
+#hero .main_icon img {
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+
+#hero .main_icon h1 {
+    color: red;
+    font-size: 17px;
+    margin-left: auto;
+    text-align: center;
+    position: absolute;/*重ねたい子要素にabsolute*/
+    top:50%;
+    left: 50%;
+   -ms-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    -webkit-transform: translate(-50%,-50%);/*ベンダープレフィックス*/
+    transform: translate(-50%,-50%);/*センター寄せの修正*/
+    margin: 0!important;/*文字がずれている場合や*/
+    padding: 0!important;/*文字が折り返される場合*/
+}    
+.overtext::after {/*0.4に透過した黒を画像の上に重ねる*/
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+  }  
+#hero .main_icon h1 span {
+    background-color: black;
+}    
+
+/*せみんくん*/
+.seminkun {
+    text-align: center;
+    width: 500px;
+    margin: 0px 0px;
+    overflow: hidden;
+    color: white;
+}
+  
+.seminkun .faceicon {
+    margin-right: -90px;
+    width: 100px;
+    float: left;
+    position: relative;
+}
+  
+.seminkun .faceicon img{
+    width: 100px;
+    height: 130px;
+    margin: 0px 0px 0px 0px;
+    float: right;
+    position: relative;
+}
+  
+.seminkun .chatting {
+    width: 120%;
+}
+  
+.says {
+    display: inline-block;
+    position: relative; 
+    margin: 5px 0 0 10px;
+    padding: 17px 13px;
+    border-radius: 12px;
+    background: rgba(57, 116, 205, 0.733);
+}
+  
+.says:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 18px; 
+    left: -24px;
+    border: 12px solid transparent;
+    border-right: 12px solid rgba(57, 116, 205, 0.733);
+}
+  
+.says p {
+    margin: 0;
+    padding: 0;
+
+/*せみんくんフォント*/
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*特徴*/
+.features {
+    margin-bottom: 120px;
+}
+
+.container .features-1 {
+    max-width: 1120px;
+    width: 90%;
+}
+
+.container .row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.container .col {
+    width: 50%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: 700px;
+    color: red;
+    margin-bottom: 20px;
+}
+
+.title span {
+    background-color: darkgray;
+}
+
+.features h2 {
+    font-size: 21px;
+    font-weight: 700px;
+    margin-bottom: 15px;
+}
+
+.features h2 span {
+    color: red;
+    background-color: darkgrey;
+    margin-top: 5px;
+}
+
+.col {
+    width: 50%
+}
+
+.col img {
+    object-fit: contain;
+    width: 300px;
+    height: 300px;
+}
+
+.text {
+    line-height: 2;
+}
+
+.col a {
+    text-decoration:underline;
+}
+
+.text {
+    font-size: 15px;
+}
+
+/*フッター*/
+
+footer {
+    height: 100px;
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    background-color: rgba(40, 39, 39);
+}
+
+.footer_left a {
+    color: white;
+    font-size: 14px;
+}
+
+.footer_menu {
+    text-align: right;
+    font-size: 12px
+}
+
+.footer_left {
+    float: left;
+}
+
+.footer_right {
+    float: right;
+}
+
+.footer_left a:hover {
+    color: red;
+    transition: .3S;
+}
+
+/*ライブ動画*/
+.Youtube {
+    display: flex;
+}
+
+.recommend {
+    margin-bottom: 50px;
+}
+
