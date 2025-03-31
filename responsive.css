@@ -1,0 +1,74 @@
+/* スマホサイズのメディアクエリ */
+@media only screen and (max-width: 480px) {
+    main {
+        margin: 0px 0px 0px 10px;
+        width: 90%;
+    }
+    .logo {
+        font-size: 24px;
+    }
+    .header_menu {
+        width: 100%;
+    }
+    .header_menu li {
+        font-size: 12px;
+    }
+    .container {
+        width: 100%;
+    }
+    .main_icon h1 {
+        font-size: 10px;
+    }
+    .main_icon {
+        width: 100%;
+    }
+    .seminkun {
+        width: 100%;
+    }
+    
+    .says {
+        font-size: 12px;
+    }
+    
+    .container .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    
+    .container .col {
+        width: 100%;
+    }
+    .col {
+        width: 100%
+    }
+    
+    .col img {
+        object-fit: contain;
+        width: 300px;
+        height: 300px;
+    }
+    .col a {
+        text-decoration:underline;
+    }
+    iframe {
+        width: 100%;
+    }
+}
+
+/* タブレットサイズのメディアクエリ */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+
+/* スマホサイズ＆タブレットサイズのメディアクエリ */
+@media only screen and (max-width: 768px) {
+
+}
+
+/* スマホサイズ＆タブレットサイズのメディアクエリ */
+@media only screen and (max-width: 960px) {
+
+}
